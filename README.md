@@ -28,8 +28,8 @@ npm run start:prod
 首次启动会自动创建默认管理员账号 `admin / admin123`。
 
 启动后访问：
-- 后端：http://localhost:3001
-- API 文档：http://localhost:3001/docs
+- 后端：http://localhost:3002
+- API 文档：http://localhost:3002/docs
 
 ## 项目结构
 

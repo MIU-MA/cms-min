@@ -45,8 +45,8 @@ async function bootstrap() {
     }),
   );
 
-  await app.listen(3001);
-  console.log('后端运行在: http://localhost:3001');
-  console.log('API 文档:   http://localhost:3001/docs');
+  await app.listen(3002);
+  console.log('后端运行在: http://localhost:3002');
+  console.log('API 文档:   http://localhost:3002/docs');
 }
 bootstrap();
