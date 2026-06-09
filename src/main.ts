@@ -11,7 +11,8 @@ async function bootstrap() {
   // 1. 配置 CORS 白名单
   app.enableCors({
     origin: [
-      'https://miuma-blog.vercel.app/',
+      'https://api.jxufe-tech.top',
+      'https://miuma-blog.vercel.app',
       'http://localhost:3000',
       'http://localhost:5173',
     ],

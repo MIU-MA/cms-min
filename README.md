@@ -2,12 +2,11 @@
 
 基于 NestJS 的个人博客后台，提供文章管理、音乐管理、文件上传、JWT 认证等接口。
 
-## 技术栈
+## 待办
 
-- **框架**：NestJS (Express)
-- **数据库**：SQLite (better-sqlite3) + TypeORM
-- **认证**：JWT + Passport
-- **文档**：Scalar API Reference
+- 上传文章功能
+- 美化仪表盘
+- 实现多网站共用
 
 ## 快速开始
 
