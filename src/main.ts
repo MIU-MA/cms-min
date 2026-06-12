@@ -11,6 +11,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'https://api.jxufe-tech.top',
+      'https://www.miuma.top',
       'https://miuma-blog.vercel.app',
       'http://localhost:3000',
       'http://localhost:5173',
