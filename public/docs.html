@@ -20,13 +20,11 @@
 </head>
 <body class="bg-slate-50 text-slate-700 dark:bg-slate-950 dark:text-slate-300 transition-colors">
 
-<!-- 主题切换 -->
 <button
   onclick="toggleTheme()" title="切换主题"
   class="fixed top-4 right-4 z-10 w-10 h-10 flex items-center justify-center text-lg rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
 >🌓</button>
 
-<!-- 头部 -->
 <div class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 mb-8">
   <div class="max-w-4xl mx-auto px-6 py-10">
     <div class="flex items-center gap-3 mb-4">
@@ -36,23 +34,20 @@
     <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm text-slate-400">
       <span>基地址：<b class="text-slate-700 dark:text-slate-300" id="baseUrl">—</b></span>
       <span>认证：<b class="text-slate-700 dark:text-slate-300">JWT Bearer Token</b></span>
-      <span>版本：<b class="text-slate-700 dark:text-slate-300">1.0</b></span>
+      <span>版本：<b class="text-slate-700 dark:text-slate-300">0.01</b></span>
     </div>
   </div>
 </div>
 
-<!-- 加载 -->
 <div id="loading" class="max-w-4xl mx-auto px-6 py-20 text-center text-slate-400">
   <div class="w-7 h-7 mx-auto mb-4 border-3 border-slate-200 dark:border-slate-700 border-t-indigo-500 rounded-full animate-spin"></div>
   加载 API 文档…
 </div>
 
-<!-- 内容 -->
 <div id="content" class="max-w-4xl mx-auto px-6 pb-8"></div>
 
-<!-- 页脚 -->
 <div class="max-w-4xl mx-auto px-6 pb-10 text-center text-xs text-slate-300 dark:text-slate-600">
-  MIUMA Blog API · 首次启动自动创建 admin / admin123
+  API · 首次启动自动创建 admin / admin123
 </div>
 
 <script>
@@ -63,7 +58,6 @@ function toggleTheme() {
   localStorage.setItem('api-docs-theme', isDark ? 'dark' : 'light');
 }
 
-// 初始化主题
 (function () {
   const stored = localStorage.getItem('api-docs-theme');
   const preferDark = window.matchMedia('(prefers-color-scheme:dark)').matches;
